@@ -2,11 +2,17 @@
 
 Simple pane splitter for angular.js 
 
+## Fork feature: 
+
+LocalStorage persistance
+
+Depends on https://github.com/grevory/angular-local-storage
+
 ## Sample
 
 HTML:
 ```html
-<bg-splitter orientation="horizontal">
+<bg-splitter orientation="horizontal" initial-position="0.65",storage-id="some-storage-key">
 	<bg-pane min-size="100">Pane 1</bg-pane>
 	<bg-pane min-size="150">
 	  <bg-splitter orientation="vertical">
